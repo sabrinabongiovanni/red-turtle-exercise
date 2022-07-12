@@ -47,7 +47,7 @@ body {
 }
 
 svg {
-  margin: 0px 1135px;
+  margin-left: 1135px;
 }
 
 .main-content {
@@ -109,9 +109,58 @@ svg {
   font-size: 14px;
 }
 
+.accordion {
+    --bs-accordion-active-bg: #fff;
+    --bs-accordion-active-color: #464646;
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
 .accordion-item {
   margin: 15px 0px;
   border-radius: 0px 0px 0px 0px;
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 1px 1px 14px rgb(0,0,0,0.1);
+}
+
+.accordion button {
+  font-weight: 600;
+}
+
+.accordion-item {
+  position: relative;
+}
+
+.accordion-item::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 840px;
+  bottom: -2.5px;
+  left: 20px;
+  background-color: #000094;
+  z-index: 99;
+}
+
+.accordion-body {
+  position: relative;
+}
+
+.accordion-body::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 52px;
+  top: 0px;
+  left: 20px;
+  background-color: #000094;
+}
+
+.accordion p {
+  font-size: 14px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0px;
 }
