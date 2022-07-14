@@ -382,16 +382,16 @@ svg {
 
 @media only screen and (min-width: 1280px) {
   .hero-text {
-    padding: 0 320px;
+    padding: 0 335px;
   }
   
   .hero h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .hero h2 {
-    font-size: 13px;
-    padding-right: 32%;
+    font-size: 15px;
+    padding-right: 43%;
     text-align: justify;
     line-height: 1.5;
   }
