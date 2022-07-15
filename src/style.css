@@ -132,6 +132,14 @@ svg {
   --bs-accordion-btn-focus-box-shadow: none;
 }
 
+.accordion-button::after{
+  background-image: url(../images/downward-arrow.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/downward-arrow.png);
+}
+
 .accordion-item {
   margin: 15px 0px;
   border-radius: 0px 0px 0px 0px;
